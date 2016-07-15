@@ -16,7 +16,8 @@
 
 # Builds a Docker image with all the dependencies for compiling and running the Kitura-Starter-Bluemix sample application.
 
-FROM ibmcom/swift-ubuntu:latest
+#FROM ibmcom/swift-ubuntu:latest
+FROM brians-image:latest
 MAINTAINER IBM Swift Engineering at IBM Cloud
 LABEL Description="Docker Ubuntu image with the all the dependencies to build and run the Kitura-Starter-Bluemix sample app."
 
@@ -32,7 +33,6 @@ ENV KITURA_BRANCH develop
 RUN apt-get update && apt-get install -y \
   libcurl4-openssl-dev \
   openssl \
-  vim \
   libssl-dev \
   openjdk-7-jdk
 
@@ -41,10 +41,6 @@ ADD clone_build_kitura.sh /root
 ADD start_kitura_sample.sh /root
 ADD run_tests_kitura.sh /root
 ADD clone_build_test_kitura.sh /root
-ADD .vim /root/.vim
-ADD .vimrc /root
-
-RUN echo "set -o vi" >> /root/.bashrc
 
 # Clone and build Kitura and sample app using utility script
 RUN /root/clone_build_kitura.sh
