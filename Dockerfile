@@ -16,8 +16,7 @@
 
 # Builds a Docker image with all the dependencies for compiling and running the Kitura-Starter-Bluemix sample application.
 
-#FROM ibmcom/swift-ubuntu:latest
-FROM brians-image:latest
+FROM ibmcom/swift-ubuntu:latest
 MAINTAINER IBM Swift Engineering at IBM Cloud
 LABEL Description="Docker Ubuntu image with the all the dependencies to build and run the Kitura-Starter-Bluemix sample app."
 
