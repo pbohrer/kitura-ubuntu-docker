@@ -38,8 +38,6 @@ RUN apt-get update && apt-get install -y \
 # Add utility build files to image
 ADD clone_build_kitura.sh /root
 ADD start_kitura_sample.sh /root
-ADD run_tests_kitura.sh /root
-ADD clone_build_test_kitura.sh /root
 
 # Clone and build Kitura and sample app using utility script
 RUN /root/clone_build_kitura.sh
