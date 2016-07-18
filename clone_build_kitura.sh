@@ -26,6 +26,8 @@ set -e
 # If not provided as a parameter, then using master as the default value.
 if [ -z "$1" ]; then
   KITURA_BRANCH="master"
+else
+  KITURA_BRANCH=$1
 fi
 
 echo ">> About to clone branch '$KITURA_BRANCH' for Kitura-Starter-Bluemix"
