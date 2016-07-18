@@ -23,9 +23,9 @@ set -e
 
 # Clone and build Kitura-Starter-Bluemix
 # The Git branch to clone should be passed as a parameter
-# If not provided as a parameter, then using master as the default value.
+# If not provided as a parameter, then using develop as the default value.
 if [ -z "$1" ]; then
-  KITURA_BRANCH="master"
+  KITURA_BRANCH="develop"
 else
   KITURA_BRANCH=$1
 fi

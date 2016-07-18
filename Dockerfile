@@ -39,7 +39,7 @@ ADD clone_build_kitura.sh /root
 ADD start_kitura_sample.sh /root
 
 # Clone and build Kitura and sample app using utility script
-RUN /root/clone_build_kitura.sh develop
+RUN /root/clone_build_kitura.sh
 
 USER root
 CMD /root/start_kitura_sample.sh
