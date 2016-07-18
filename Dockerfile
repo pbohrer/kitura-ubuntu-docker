@@ -26,7 +26,6 @@ EXPOSE 8090
 # Variables
 ENV HOME /root
 ENV WORK_DIR /root
-ENV KITURA_BRANCH develop
 
 # Linux OS utils and dependencies
 RUN apt-get update && apt-get install -y \
@@ -40,7 +39,7 @@ ADD clone_build_kitura.sh /root
 ADD start_kitura_sample.sh /root
 
 # Clone and build Kitura and sample app using utility script
-RUN /root/clone_build_kitura.sh
+RUN /root/clone_build_kitura.sh develop
 
 USER root
 CMD /root/start_kitura_sample.sh

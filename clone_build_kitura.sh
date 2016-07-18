@@ -22,9 +22,9 @@
 set -e
 
 # Clone and build Kitura-Starter-Bluemix
-# The Git branch to clone should be set as an environment variable.
-# If branch environment var is not set, then using master as the default value.
-if [ -z "$KITURA_BRANCH" ]; then
+# The Git branch to clone should be passed as a parameter
+# If not provided as a parameter, then using master as the default value.
+if [ -z "$1" ]; then
   KITURA_BRANCH="master"
 fi
 
