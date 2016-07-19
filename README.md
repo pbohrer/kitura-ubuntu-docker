@@ -1,4 +1,4 @@
-[![Build Status - Develop](https://travis-ci.org/IBM-Swift/kitura-ubuntu-docker.svg?branch=develop)](https://travis-ci.org/IBM-Swift/kitura-ubuntu-docker)
+[![Build Status - Develop](https://travis-ci.org/IBM-Swift/kitura-ubuntu-docker.svg?branch=master)](https://travis-ci.org/IBM-Swift/kitura-ubuntu-docker)
 
 
 # kitura-ubuntu-docker
