@@ -31,8 +31,7 @@ ENV WORK_DIR /root
 RUN apt-get update && apt-get install -y \
   libcurl4-openssl-dev \
   openssl \
-  libssl-dev \
-  openjdk-7-jdk
+  libssl-dev
 
 # Add utility build files to image
 ADD clone_build_kitura.sh /root
