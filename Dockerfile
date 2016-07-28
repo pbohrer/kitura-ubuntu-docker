@@ -23,16 +23,6 @@ LABEL Description="Docker Ubuntu image with the all the dependencies to build an
 # Expose default port for Kitura
 EXPOSE 8090
 
-# Variables
-ENV HOME /root
-ENV WORK_DIR /root
-
-# Linux OS utils and dependencies
-RUN apt-get update && apt-get install -y \
-  libcurl4-openssl-dev \
-  openssl \
-  libssl-dev
-
 # Add utility build files to image
 ADD clone_build_kitura.sh /root
 ADD start_kitura_sample.sh /root
