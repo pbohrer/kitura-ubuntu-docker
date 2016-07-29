@@ -2,4 +2,4 @@
 
 
 # kitura-ubuntu-docker
-Docker image for building and running the Kitura-Starter-Bluemix application. Please note that this Docker image extends the swift-ubuntu-docker image. Hence, this image uses Ubuntu v14.04 (same version found in Cloud Foundry environments, such as Bluemix).
+Docker image for building and running the Kitura-Starter-Bluemix application. Please note that this Docker image extends the [swift-ubuntu-docker](https://github.com/IBM-Swift/swift-ubuntu-docker) image. Hence, this image uses Ubuntu v14.04 (same version found in Cloud Foundry environments, such as Bluemix).
