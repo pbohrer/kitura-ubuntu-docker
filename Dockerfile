@@ -14,11 +14,11 @@
 # limitations under the License.
 ##
 
-# Builds a Docker image with all the dependencies for compiling and running the Kitura-Starter-Bluemix sample application.
+# Builds a Docker image with all the dependencies for compiling and running the Kitura-Starter sample application.
 
 FROM ibmcom/swift-ubuntu:latest
 MAINTAINER IBM Swift Engineering at IBM Cloud
-LABEL Description="Docker image for building and running the Kitura-Starter-Bluemix sample app."
+LABEL Description="Docker image for building and running the Kitura-Starter sample application."
 
 # Expose default port for Kitura
 EXPOSE 8090
