@@ -20,4 +20,4 @@
 set -e
 
 # Run Kitura sample
-cd /root/Kitura-Starter-Bluemix && ./.build/debug/Kitura-Starter-Bluemix
+cd /root/Kitura-Starter && ./.build/debug/Kitura-Starter

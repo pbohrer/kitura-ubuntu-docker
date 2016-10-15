@@ -21,7 +21,9 @@
 # If any commands fail, we want the shell script to exit immediately.
 set -e
 
-# Clone and build Kitura-Starter-Bluemix
+REPO_URL=https://github.com/IBM-Bluemix/Kitura-Starter.git
+
+# Clone and build Kitura-Starter
 # The Git branch to clone should be passed as a parameter
 # If not provided as a parameter, then using develop as the default value.
 if [ -z "$1" ]; then
@@ -30,14 +32,14 @@ else
   KITURA_BRANCH=$1
 fi
 
-echo ">> About to clone branch '$KITURA_BRANCH' for Kitura-Starter-Bluemix"
+echo ">> About to clone branch '$KITURA_BRANCH' for Kitura-Starter"
 # Clone Kitura repo
-cd /root && rm -rf Kitura-Starter-Bluemix && git clone -b $KITURA_BRANCH https://github.com/IBM-Swift/Kitura-Starter-Bluemix.git
+cd /root && rm -rf Kitura-Starter && git clone -b $KITURA_BRANCH $REPO_URL
 
 # Make the Kitura folder the working directory
-cd /root/Kitura-Starter-Bluemix
+cd /root/Kitura-Starter
 
-# Build Kitura-Starter-Bluemix
-echo ">> About to build Kitura-Starter-Bluemix..."
+# Build Kitura-Starter
+echo ">> About to build Kitura-Starter..."
 make
-echo ">> Build for Kitura-Starter-Bluemix completed (see above for results)."
+echo ">> Build for Kitura-Starter completed (see above for results)."
